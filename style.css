@@ -1,3 +1,43 @@
 body{
-    background: forestgreen
+    background: forestgreen;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    margin: 15px;
+}
+
+.mainHeaderTitle{
+    grid-area: title;
+    place-self: center;
+}
+
+.mainHeaderImg{
+    grid-area: image;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* need do with class */
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+}
+
+.mainHeaderInfo{
+    grid-area: info;
+    place-self: center;
+}
+
+.mainHeader{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "title title"
+    "image info";
+    grid-row-gap: 15px;
 }
