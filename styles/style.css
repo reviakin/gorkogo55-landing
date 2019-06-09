@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-/* need do with class */
+
 img {
     display: block;
     margin: auto;
