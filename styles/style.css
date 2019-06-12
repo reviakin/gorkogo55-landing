@@ -41,3 +41,8 @@ img {
     "image info";
     grid-row-gap: 15px;
 } */
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
