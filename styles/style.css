@@ -14,12 +14,6 @@
     place-self: center;
 }
 
-.mainHeaderImg{
-    grid-area: image;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 img {
     display: block;
     margin: auto;
