@@ -1,2 +1,12 @@
 # gorkogo55-landing
-landing for https://github.com/reviakin/gorkogo55
+
+ТЦ «Две пятерки» - очень интересное место по своей структуре.
+В одном знании находится много собственников и арендаторов.
+Если вам интересно, как там все устроено, читайте раздел 
+[СТРУКТУРА ТЦ «ДВЕ ПЯТЕРКИ»](https://frontend-basics.blogspot.com/2019/05/first-review-gorkogo55.html) 
+в моем блоге.
+
+Этот проект появился в рамках [плановых изменений]
+(https://frontend-basics.blogspot.com/2019/06/update-requirements.html)
+
+То ли ещё бу́дет...
