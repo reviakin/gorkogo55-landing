@@ -10,6 +10,7 @@ export default function eventsList(props) {
     events = events.filter(afterNow).sort(byDate);
     return (
       <>
+        <hr />
         <ul className="list-unstyled">{events.map(renderEvents)}</ul>
       </>
     );
@@ -45,14 +46,17 @@ function byDate(event1, event2) {
 function renderEvents(event) {
   return (
     <li key={Math.random()}>
-      <p>
-        {event.date} - {event.title} -{" "}
-        <span>
-          <a href={`https://shop.gorkogo55.ru/shop/${event.shop}`}>
-            Павильон № {event.shop}
-          </a>
-        </span>
+      <p className="text-center">{event.date}</p>
+      <p className="text-center">
+        <a
+          className="btn btn-outline-primary"
+          href={`https://shop.gorkogo55.ru/shop/${event.shop}`}
+        >
+          Павильон № {event.shop}
+        </a>
       </p>
+      <p>{event.title}</p>
+      <hr />
     </li>
   );
 }
