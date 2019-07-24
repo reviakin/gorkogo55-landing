@@ -31,22 +31,25 @@ export default function eventsList(props) {
         }
       });
     return (
-      <ul>
-        {events.map(function renderEvents(event) {
-          return (
-            <li key={Math.random()}>
-              <p>
-                {event.date} - {event.title} -{" "}
-                <span>
-                  <a href={`https://shop.gorkogo55.ru/shop/${event.shop}`}>
-                    Павильон № {event.shop}
-                  </a>
-                </span>
-              </p>
-            </li>
-          );
-        })}
-      </ul>
+      <>
+        <h6>Меропрития ТЦ Горького55</h6>
+        <ul>
+          {events.map(function renderEvents(event) {
+            return (
+              <li key={Math.random()}>
+                <p>
+                  {event.date} - {event.title} -{" "}
+                  <span>
+                    <a href={`https://shop.gorkogo55.ru/shop/${event.shop}`}>
+                      Павильон № {event.shop}
+                    </a>
+                  </span>
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </>
     );
   } else {
     return <p>Тут размещаются акции торгового центра</p>;
