@@ -5,25 +5,16 @@ export default function eventsList(props) {
   var { events, loading } = props;
 
   if (loading) {
-    return (
-      <div className="container pb-3">
-        <p>Загрузка акций...</p>
-      </div>
-    );
+    return <p>Загрузка акций...</p>;
   } else if (events.length > 0 && !loading) {
     events = events.filter(afterNow).sort(byDate);
     return (
-      <div className="container pb-3">
-        <p>Меропрития ТЦ Горького55</p>
+      <>
         <ul className="list-unstyled">{events.map(renderEvents)}</ul>
-      </div>
+      </>
     );
   } else {
-    return (
-      <div className="container pb-3">
-        <p>Тут размещаются акции торгового центра</p>
-      </div>
-    );
+    return <p>Тут размещаются акции торгового центра</p>;
   }
 }
 
