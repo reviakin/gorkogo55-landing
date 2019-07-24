@@ -5,7 +5,11 @@ import moment from "moment";
 export default function eventsList(props) {
   var { events, loading } = props;
   if (loading) {
-    return <p>Загрузка акций...</p>;
+    return (
+      <div className="container pb-3">
+        <p>Загрузка акций...</p>
+      </div>
+    );
   } else if (events.length > 0 && !loading) {
     events = events
       .filter(function afterNow(event) {
@@ -31,10 +35,12 @@ export default function eventsList(props) {
         }
       });
     return (
-      <>
+      <div className="container pb-3">
         <h6>Меропрития ТЦ Горького55</h6>
-        <ul>
+        <ul className="list-unstyled">
           {events.map(function renderEvents(event) {
+            var date = moment(event.dete);
+            console.log(date);
             return (
               <li key={Math.random()}>
                 <p>
@@ -49,9 +55,13 @@ export default function eventsList(props) {
             );
           })}
         </ul>
-      </>
+      </div>
     );
   } else {
-    return <p>Тут размещаются акции торгового центра</p>;
+    return (
+      <div className="container pb-3">
+        <p>Тут размещаются акции торгового центра</p>
+      </div>
+    );
   }
 }
