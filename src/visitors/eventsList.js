@@ -33,9 +33,9 @@ function byDate(event1, event2) {
   event1 = event1._i.replace(/[-]/g, "");
   event2 = moment(event2.date);
   event2 = event2._i.replace(/[-]/g, "");
-  if (event1 < event2) {
+  if (event1 > event2) {
     return -1;
-  } else if (event1 > event2) {
+  } else if (event1 < event2) {
     return 1;
   } else {
     return 0;
