@@ -39,8 +39,6 @@ export default function eventsList(props) {
         <h6>Меропрития ТЦ Горького55</h6>
         <ul className="list-unstyled">
           {events.map(function renderEvents(event) {
-            var date = moment(event.dete);
-            console.log(date);
             return (
               <li key={Math.random()}>
                 <p>
