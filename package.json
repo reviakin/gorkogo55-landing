@@ -5,7 +5,8 @@
   "main": "visitors.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel visitors.html"
+    "dev": "parcel visitors.html",
+    "build": "parcel build visitors.html --no-source-maps --public-url ./ -d build"
   },
   "repository": {
     "type": "git",
