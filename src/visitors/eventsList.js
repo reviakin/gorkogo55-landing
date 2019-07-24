@@ -1,9 +1,9 @@
 import React from "react";
 import moment from "moment";
 // ******
-// TODO: more readeble come
 export default function eventsList(props) {
   var { events, loading } = props;
+
   if (loading) {
     return (
       <div className="container pb-3">
@@ -11,48 +11,11 @@ export default function eventsList(props) {
       </div>
     );
   } else if (events.length > 0 && !loading) {
-    events = events
-      .filter(function afterNow(event) {
-        var date = moment(event.date);
-        date = date._i.replace(/[-]/g, "");
-        var now = moment()
-          .utcOffset("+02:00")
-          .format("YYYY, MM, D")
-          .replace(/[, ]/g, "");
-        return Number(date) >= Number(now);
-      })
-      .sort(function byDate(event1, event2) {
-        event1 = moment(event1.date);
-        event1 = event1._i.replace(/[-]/g, "");
-        event2 = moment(event2.date);
-        event2 = event2._i.replace(/[-]/g, "");
-        if (event1 < event2) {
-          return -1;
-        } else if (event1 > event2) {
-          return 1;
-        } else {
-          return 0;
-        }
-      });
+    events = events.filter(afterNow).sort(byDate);
     return (
       <div className="container pb-3">
-        <h6>Меропрития ТЦ Горького55</h6>
-        <ul className="list-unstyled">
-          {events.map(function renderEvents(event) {
-            return (
-              <li key={Math.random()}>
-                <p>
-                  {event.date} - {event.title} -{" "}
-                  <span>
-                    <a href={`https://shop.gorkogo55.ru/shop/${event.shop}`}>
-                      Павильон № {event.shop}
-                    </a>
-                  </span>
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+        <p>Меропрития ТЦ Горького55</p>
+        <ul className="list-unstyled">{events.map(renderEvents)}</ul>
       </div>
     );
   } else {
@@ -62,4 +25,43 @@ export default function eventsList(props) {
       </div>
     );
   }
+}
+
+function afterNow(event) {
+  var date = moment(event.date);
+  date = date._i.replace(/[-]/g, "");
+  var now = moment()
+    .utcOffset("+02:00")
+    .format("YYYY, MM, D")
+    .replace(/[, ]/g, "");
+  return Number(date) >= Number(now);
+}
+
+function byDate(event1, event2) {
+  event1 = moment(event1.date);
+  event1 = event1._i.replace(/[-]/g, "");
+  event2 = moment(event2.date);
+  event2 = event2._i.replace(/[-]/g, "");
+  if (event1 < event2) {
+    return -1;
+  } else if (event1 > event2) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+function renderEvents(event) {
+  return (
+    <li key={Math.random()}>
+      <p>
+        {event.date} - {event.title} -{" "}
+        <span>
+          <a href={`https://shop.gorkogo55.ru/shop/${event.shop}`}>
+            Павильон № {event.shop}
+          </a>
+        </span>
+      </p>
+    </li>
+  );
 }
