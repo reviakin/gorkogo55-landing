@@ -7,7 +7,7 @@ export default function eventsList(props) {
   if (loading) {
     return <p>Загрузка акций...</p>;
   } else if (events.length > 0 && !loading) {
-    events = events.filter(afterNow).sort(byDate);
+    events = events.filter(beforeNow).sort(byDate);
     return (
       <>
         <hr />
@@ -19,14 +19,14 @@ export default function eventsList(props) {
   }
 }
 
-function afterNow(event) {
+function beforeNow(event) {
   var date = moment(event.date);
   date = date._i.replace(/[-]/g, "");
   var now = moment()
     .utcOffset("+02:00")
     .format("YYYY, MM, D")
     .replace(/[, ]/g, "");
-  return Number(date) >= Number(now);
+  return Number(date) <= Number(now);
 }
 
 function byDate(event1, event2) {
