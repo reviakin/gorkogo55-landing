@@ -7,11 +7,14 @@ export default function eventsList(props) {
   if (loading) {
     return <p>Загрузка акций...</p>;
   } else if (events.length > 0 && !loading) {
-    events = events.filter(beforeNow).sort(byDate);
+    let eventsList = events
+      .filter(beforeNow)
+      .sort(byDate)
+      .map(renderEvents);
     return (
       <>
         <hr />
-        <ul className="list-unstyled">{events.map(renderEvents)}</ul>
+        <ul className="list-unstyled">{eventsList}</ul>
       </>
     );
   } else {
