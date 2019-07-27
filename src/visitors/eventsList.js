@@ -50,6 +50,7 @@ function renderEvents(event) {
   return (
     <li key={Math.random()}>
       <p className="text-center">{event.date}</p>
+      <p>{event.title}</p>
       <p className="text-center">
         <a
           className="btn btn-outline-primary"
@@ -58,7 +59,6 @@ function renderEvents(event) {
           Павильон № {event.shop}
         </a>
       </p>
-      <p>{event.title}</p>
       <hr />
     </li>
   );
