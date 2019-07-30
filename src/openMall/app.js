@@ -11,6 +11,13 @@ function App() {
   if (now >= 9 && now < 19) {
     isOpen = <span style={{ color: "green" }}>(cейчас открыто)</span>;
   }
-  return <li>с 09:00 до 19:00 {isOpen}</li>;
+  return (
+    <div>
+      <span>
+        <img src="https://img.icons8.com/ios/20/000000/clock.png" />
+      </span>{" "}
+      с 09:00 до 19:00 {isOpen}
+    </div>
+  );
 }
 ReactDOM.render(<App />, document.getElementById("openMall"));
