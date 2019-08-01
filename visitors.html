@@ -36,8 +36,13 @@
             </a>
           </li>
           <li>
-            <div id="openMall"></div>
-            <script src="./src/openMall/app.js"></script>
+            <span>
+              <img src="https://img.icons8.com/ios/20/000000/clock.png" />
+            </span>
+            с 09:00 до 19:00
+            <span id="text-open" class="text-success d-none">    
+               (Сейчас открыто)
+            </span>
           </li>
         </ul>
       </div>
@@ -94,6 +99,21 @@
         <!-- /Yandex.Metrika informer -->
       </div>
     </footer>
+
+    <script type="text/javascript">
+      // https://stackoverflow.com/a/800010/1775459
+      document.addEventListener("DOMContentLoaded", function() {        
+        var element = document.getElementById("text-open");
+        if (element) {
+          var kaliningradHours = new Date().getUTCHours() + 2;
+          var isMallOpened = kaliningradHours >= 9 && kaliningradHours < 19;
+
+          if (isMallOpened) {
+            element.classList.remove("d-none");
+          }          
+        }
+      });
+    </script>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
