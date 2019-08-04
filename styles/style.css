@@ -1,7 +1,6 @@
 .border-bottom { 
     border-bottom: 1px solid #888888;
     text-align: left;
-    margin-left: 10px;
   }
 
 .top-div {
@@ -13,21 +12,19 @@ li {
 }
 
 .wellcome {
-  margin-left: 30px;
+  margin-left: 25px;
   font-style: italic;
   font-size: 14px;
 }
 
 .d-flex {
   display: flex;
- /* justify-content: space-between;*/
 }
 
 .logo {
-  width: 25px;
-  height: 25px;
-  margin-left: 1px;
-  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  margin-top: 9px;
 }
 
 .name55{
