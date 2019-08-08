@@ -12,19 +12,16 @@ li {
 }
 
 .wellcome {
-  margin-left: 25px;
+  margin-left: 30px;
   font-style: italic;
   font-size: 14px;
 }
 
-.d-flex {
-  display: flex;
-}
-
 .logo {
-  width: 20px;
-  height: 20px;
-  margin-top: 8px;
+  width: 25px;
+  height: 25px;
+  margin-left: 1px;
+  margin-top: 5px;
 }
 
 .name55{
