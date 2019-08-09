@@ -127,8 +127,20 @@
     </footer>
 
     <script type="text/javascript">
-      // https://stackoverflow.com/a/800010/1775459
       document.addEventListener("DOMContentLoaded", function() {        
+        //
+        // NOTE!
+        // 
+        // Весь JavaScript код должен быть внутри этой функции.
+        //
+        // Событие DOMContentLoaded происходит когда весь HTML был полностью загружен и 
+        // пройден парсером, не дожидаясь окончания загрузки таблиц стилей, изображений и фреймов.
+        //
+        // Подробнее читать здесь:
+        //  https://developer.mozilla.org/ru/docs/Web/Events/DOMContentLoaded 
+        //  https://stackoverflow.com/a/800010/1775459
+        //
+
         var element = document.getElementById("text-open");
         if (element) {
           var kaliningradHours = new Date().getUTCHours() + 2;
