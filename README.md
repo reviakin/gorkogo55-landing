@@ -1,5 +1,15 @@
 # gorkogo55-landing
 
+## Технологический стек
+
+В этом проекте выбран самый базовый стек веб технологий
+
+* JavaScript ES5
+* HTML5
+* Bootstrap stylesheets
+
+## Описание проекта
+
 ![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing/blob/master/assets/%20readme/background.jpg)
 
 ТЦ «Две пятерки» - очень интересное место по своей структуре.
