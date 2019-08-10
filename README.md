@@ -1,6 +1,14 @@
 # gorkogo55-landing
 
-![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing/blob/master/assets/%20readme/background.jpg)
+## Технологический стек
+
+В этом проекте выбран самый базовый стек веб технологий:
+
+* JavaScript ES5;
+* HTML5;
+* Bootstrap stylesheets.
+
+## Описание проекта
 
 ТЦ «Две пятерки» - очень интересное место по своей структуре.
 В одном знании находится много собственников и арендаторов.
@@ -8,4 +16,8 @@
 [Структура ТЦ «Две пятерки»](https://frontend-basics.blogspot.com/2019/05/first-review-gorkogo55.html) 
 в соответствующей записи моего блога.
 
-Этот проект появился в рамках [запланированных изменений](https://frontend-basics.blogspot.com/2019/06/update-requirements.html) и со временим будет постепенно улучшаться (но не быстро)
+Этот проект появился в рамках [запланированных изменений](https://frontend-basics.blogspot.com/2019/06/update-requirements.html) и со временим будет постепенно улучшаться (но не быстро).
+
+## Изображение торгового центра
+
+![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing/blob/master/assets/%20readme/background.jpg)
