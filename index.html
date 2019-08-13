@@ -16,7 +16,7 @@
   <body>
     <div class="header">
       <div class="container pt-5 pb-3">
-        <span id="wellcome" class="header__welcome">
+        <span id="welcome" class="header__welcome">
           Добро пожаловать
         </span>
         <div class="d-flex">
@@ -162,7 +162,7 @@
         // в зависимости от отступа во время скрола
         //
         document.addEventListener("scroll", function() {
-          document.getElementById("wellcome").style.opacity = ( 60 - pageYOffset ) / 60;
+          document.getElementById("welcome").style.opacity = ( 60 - pageYOffset ) / 60;
         });
       });
     </script>
