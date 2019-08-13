@@ -14,15 +14,15 @@
   </head>
 
   <body>
-    <div class="border-bottom">
+    <div class="header">
       <div class="container pt-5 pb-3">
-        <span id="wellcome">
+        <span id="wellcome" class="header__welcome">
           Добро пожаловать
         </span>
         <div class="d-flex">
-          <img class="logo" src="./assets/img/logo-main.png" alt="logo" />
-          <span class="name55 font-italic">ТЦ «Две пятерки»</span>
-          <img class="menuimg" src="./assets/img/menu.png" />
+          <img class="header__logo" src="./assets/img/logo-main.png" alt="logo" />
+          <span class="header__name55 font-italic">ТЦ «Две пятерки»</span>
+          <img class="header__menuimg" src="./assets/img/menu.png" />
         </div>
       </div>
     </div>
@@ -127,8 +127,25 @@
     </footer>
 
     <script type="text/javascript">
-      // https://stackoverflow.com/a/800010/1775459
       document.addEventListener("DOMContentLoaded", function() {        
+        //
+        // NOTE!
+        // 
+        // Весь JavaScript код должен быть внутри этой функции.
+        //
+        // Событие DOMContentLoaded происходит когда весь HTML был полностью загружен и 
+        // пройден парсером, не дожидаясь окончания загрузки таблиц стилей, изображений и фреймов.
+        //
+        // Подробнее читать здесь:
+        //  https://developer.mozilla.org/ru/docs/Web/Events/DOMContentLoaded 
+        //  https://stackoverflow.com/a/800010/1775459
+        //
+
+
+        //
+        // Код отображает "Сейчас открыто", 
+        // если ТЦ открыт в текущий момент времени
+        //
         var element = document.getElementById("text-open");
         if (element) {
           var kaliningradHours = new Date().getUTCHours() + 2;
@@ -138,10 +155,15 @@
             element.classList.remove("d-none");
           }          
         }
-      });
 
-      document.addEventListener("scroll", function() {
-      document.getElementById("wellcome").style.opacity = ( 60 - pageYOffset ) / 60;
+
+        //
+        // Устанавливает прозрачность текста "Добро пожаловать"
+        // в зависимости от отступа во время скрола
+        //
+        document.addEventListener("scroll", function() {
+          document.getElementById("wellcome").style.opacity = ( 60 - pageYOffset ) / 60;
+        });
       });
     </script>
 
