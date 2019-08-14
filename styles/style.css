@@ -6,12 +6,24 @@
 .header {
     border-bottom: 1px solid #888888;
     text-align: left;
+    height: 125px;
   }
 
 .header__welcome {
   margin-left: 25px;
   font-style: italic;
   font-size: 14px;
+}
+
+.header__line {
+  height: 50px;
+}
+
+.header__line--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__logo {
