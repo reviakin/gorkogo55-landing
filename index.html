@@ -14,13 +14,14 @@
   </head>
 
   <body>
-    <div class="header">
-      <div class="container pt-5">
-        <span id="welcome" class="header__welcome">
+    <div class="container pt-5">
+      <span id="welcome" class="header__welcome">
           Добро пожаловать
-        </span>
-      </div>
-      <div class="container pb-3">
+      </span>
+    </div>
+
+    <div class="header">
+      <div class="container">
         <div id="fixed-nav" class="d-flex header__line">
             <img class="header__logo" src="./assets/img/logo-main.png" alt="logo" />
             <span class="header__name55 font-italic">ТЦ «Две пятерки»</span>
@@ -158,24 +159,12 @@
           }          
         }
 
-
-        //
-        // Тут несколько действий:
         //
         //  - Устанавливает прозрачность текста "Добро пожаловать"
         //    в зависимости от отступа во время скрола.
         //
-        //  - Устанавливает закреп элемента "Линия" блока "Заголовок"
-        //    в зависимости от отступа во время скрола.
-        //
         document.addEventListener("scroll", function() {
           document.getElementById("welcome").style.opacity = ( 60 - pageYOffset ) / 60;
-          
-          if (pageYOffset >= 60) {
-            document.getElementById("fixed-nav").classList.add('header__line--fixed');
-          } else {
-            document.getElementById("fixed-nav").classList.remove('header__line--fixed');
-          }
         });
       });
     </script>
