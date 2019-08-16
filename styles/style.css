@@ -13,7 +13,8 @@
   z-index: 2;
 }
 
-.headerExceptIndex {
+/* модифицируется высота блока на всех страницах, кроме index.html*/
+.header__height {
   height: 125px !important;
 }
 
