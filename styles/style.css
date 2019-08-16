@@ -3,11 +3,19 @@
  * Ref: https://www.youtube.com/watch?v=lQPs20b3Ey8
  */
 
-.header {
-    border-bottom: 1px solid #888888;
-    text-align: left;
-    height: 125px;
-  }
+ .header {
+  border-bottom: 1px solid #888888;
+  text-align: left;
+  height: 53px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.headerExceptIndex {
+  height: 125px !important;
+}
 
 .header__welcome {
   margin-left: 25px;
@@ -15,39 +23,29 @@
   font-size: 14px;
 }
 
-.header__line {
-  height: 50px;
-}
-
-.header__line--fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .header__logo {
   width: 20px;
   height: 20px;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 
 .header__name55{
   font-size: 24px;
   margin-left: 2px;
+  margin-top: 6px;
 }
 
 .header__menuimg{
-  margin-top: 6px;
+  margin-top: 11px;
   margin-left: auto;
 }
 
 .top-div {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 li {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .d-flex {
@@ -60,6 +58,5 @@ li {
   font-style: italic;
   text-decoration-line: underline;
   text-align: left;
-  margin-left: 10px
+  margin-left: 10px;
 }
-
