@@ -7,7 +7,6 @@
   position: sticky;
   top: 53px;
   z-index: 1;
-  
 }
 
 .header__menu {
@@ -19,8 +18,6 @@
   list-style: none;
   padding-inline-start: 0px;
   margin-inline-start: 0px;
-  
-  
 }
 
 .header__menu a {
@@ -32,7 +29,12 @@
   background: rgb(236, 236, 236); 
   padding: 10px; 
   border: 1px solid #ccc; 
-  
+}
+
+.header__menu a:hover {
+  text-decoration: none; 
+  background-color: #d3d3d3;
+  color: rgb(56, 56, 56);
 }
 
 .header__menu li {
