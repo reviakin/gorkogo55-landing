@@ -3,7 +3,43 @@
  * Ref: https://www.youtube.com/watch?v=lQPs20b3Ey8
  */
 
- .header {
+.header__menuwrapper{
+  position: sticky;
+  top: 53px;
+  z-index: 1;
+  
+}
+
+.header__menu {
+  position: absolute;
+  right: 0;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+  background-color: rgb(119, 119, 119); 
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-inline-start: 0px;
+  
+  
+}
+
+.header__menu a {
+  color: rgb(56, 56, 56);
+  float: right;
+  display: block; 
+  text-decoration: none; 
+  width: 150px; 
+  background: rgb(236, 236, 236); 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  
+}
+
+.header__menu li {
+  text-align:center;
+}
+
+.header {
   border-bottom: 1px solid #888888;
   text-align: left;
   height: 53px;
