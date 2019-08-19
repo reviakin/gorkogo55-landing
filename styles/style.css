@@ -6,25 +6,20 @@
 .header__menuwrapper{
   position: sticky;
   top: 53px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__menu {
   position: absolute;
   right: 0;
-  /* border: 1px solid black; */
-  /* border-radius: 5px; */
   background-color: rgb(119, 119, 119); 
   list-style: none;
   padding-inline-start: 0px;
-  margin-inline-start: 0px;
 }
 
 .header__menu a {
   color: rgb(56, 56, 56);
-  float: right;
   display: block; 
-  text-decoration: none; 
   width: 150px; 
   background: rgb(236, 236, 236); 
   padding: 10px; 
@@ -83,7 +78,7 @@
   margin-top: 20px;
 }
 
-li {
+.list-unstyled li {
   margin-top: 10px;
 }
 
