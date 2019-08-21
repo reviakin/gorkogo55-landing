@@ -28,9 +28,9 @@
       </div>
     </div>
 
-    <div class="header__menuwrapper">
+    <div class="header__menuwrapper header__menuwrapper__top d-none" id="menu">
       <div class="container">
-        <ul class="header__menu d-no1ne" id="menu">
+        <ul class="header__menu">
           <li><a href="http://shop.gorkogo55.ru/search">Магазины</a></li>
           <li><a href="visitors.html">Посетителям</a></li>
           <li><a href="tenants.html">Арендаторам</a></li>
@@ -93,7 +93,6 @@
     <script type="text/javascript">
       // https://stackoverflow.com/a/800010/1775459
       document.addEventListener("DOMContentLoaded", function() {    
-        document.getElementById( "menu" ).classList.add( "d-none" );    
         var element = document.getElementById("text-open");
         if (element) {
           var kaliningradHours = new Date().getUTCHours() + 2;
@@ -108,7 +107,6 @@
       //Открытие и закрытие меню по нажатию на "гамбургер"
       var menuBtn = document.getElementById( "menuBtn" );
       var menu = document.getElementById( "menu" );
-      menu.classList.remove( "d-none" );
       menuBtn.addEventListener( 'click', function (event) { 
         if ( menu.classList.contains( "d-none" ) )  {
           menu.classList.remove( "d-none" );
