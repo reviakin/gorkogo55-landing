@@ -23,8 +23,19 @@
           <div class="d-flex">
               <img class="header__logo" src="./assets/img/logo-main.png" alt="logo" />
               <span class="header__name55 font-italic">Собственникам</span>
-              <i class="fas fa-bars fa-lg header__menubar text-secondary"></i>
+              <i class="fas fa-bars fa-lg header__menubar text-secondary" id="menuBtn"></i>
           </div>
+      </div>
+    </div>
+
+    <div class="header__menuwrapper header__menuwrapper__top d-none" id="menu">
+      <div class="container">
+        <ul class="header__menu">
+          <li><a href="http://shop.gorkogo55.ru/search">Магазины</a></li>
+          <li><a href="visitors.html">Посетителям</a></li>
+          <li><a href="tenants.html">Арендаторам</a></li>
+          <li><a href="owners.html">Собственникам</a></li>
+          </ul>
       </div>
     </div>
 
@@ -81,7 +92,7 @@
 
     <script type="text/javascript">
       // https://stackoverflow.com/a/800010/1775459
-      document.addEventListener("DOMContentLoaded", function() {        
+      document.addEventListener("DOMContentLoaded", function() {    
         var element = document.getElementById("text-open");
         if (element) {
           var kaliningradHours = new Date().getUTCHours() + 2;
@@ -90,6 +101,25 @@
           if (isMallOpened) {
             element.classList.remove("d-none");
           }          
+        }
+      });
+      
+      //Открытие и закрытие меню по нажатию на "гамбургер"
+      var menuBtn = document.getElementById( "menuBtn" );
+      var menu = document.getElementById( "menu" );
+      menuBtn.addEventListener( 'click', function (event) { 
+        if ( menu.classList.contains( "d-none" ) )  {
+          menu.classList.remove( "d-none" );
+        }
+        else {
+          menu.classList.add( "d-none" );
+        }
+        event.stopPropagation();
+      });
+      //закрытие меню, если оно открыто кликом по пустому месту
+      document.addEventListener("click", function(event) {
+        if ( !menu.classList.contains("d-none") ) {
+          menu.classList.add( "d-none" );
         }
       });
     </script>

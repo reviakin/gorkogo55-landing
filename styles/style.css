@@ -7,6 +7,14 @@
   position: sticky;
   top: 53px;
   z-index: 3;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/*Фикс меню везде кроме index.html*/
+.header__menuwrapper__top{
+  top: 125px !important;
 }
 
 .header__menu {
