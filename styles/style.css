@@ -7,6 +7,9 @@
   position: sticky;
   top: 53px;
   z-index: 3;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .header__menu {
