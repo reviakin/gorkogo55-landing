@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сайт торгового центра «Две пятерки»</title>
+    <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/style.css?v=2" />
     <link
       rel="stylesheet"
@@ -11,13 +12,12 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/f77f7d39ce.js"></script>
   </head>
 
   <body>
     <div class="container pt-5">
       <span id="welcome" class="header__welcome">
-        Добро пожаловать 
+        Добро пожаловать
       </span>
     </div>
 
@@ -58,7 +58,7 @@
               <i class="far fa-clock text-secondary" ></i>
             </span>
             с 09:00 до 19:00
-            <span id="text-open" class="text-success d-none">    
+            <span id="text-open" class="text-success d-none">
                (Сейчас открыто)
             </span>
           </li>
@@ -140,23 +140,23 @@
     </footer>
 
     <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function() {        
+      document.addEventListener("DOMContentLoaded", function() {
         //
         // NOTE!
-        // 
+        //
         // Весь JavaScript код должен быть внутри этой функции.
         //
-        // Событие DOMContentLoaded происходит когда весь HTML был полностью загружен и 
+        // Событие DOMContentLoaded происходит когда весь HTML был полностью загружен и
         // пройден парсером, не дожидаясь окончания загрузки таблиц стилей, изображений и фреймов.
         //
         // Подробнее читать здесь:
-        //  https://developer.mozilla.org/ru/docs/Web/Events/DOMContentLoaded 
+        //  https://developer.mozilla.org/ru/docs/Web/Events/DOMContentLoaded
         //  https://stackoverflow.com/a/800010/1775459
         //
 
 
         //
-        // Код отображает "Сейчас открыто", 
+        // Код отображает "Сейчас открыто",
         // если ТЦ открыт в текущий момент времени
         //
         var element = document.getElementById("text-open");
@@ -166,7 +166,7 @@
 
           if (isMallOpened) {
             element.classList.remove("d-none");
-          }          
+          }
         }
 
         //
@@ -181,7 +181,7 @@
       //Открытие и закрытие меню по нажатию на "гамбургер"
       var menuBtn = document.getElementById( "menuBtn" );
       var menu = document.getElementById( "menu" );
-      menuBtn.addEventListener( 'click', function (event) { 
+      menuBtn.addEventListener( 'click', function (event) {
         if ( menu.classList.contains( "d-none" ) )  {
           menu.classList.remove( "d-none" );
         }
