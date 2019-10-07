@@ -3,6 +3,8 @@
  * Ref: https://www.youtube.com/watch?v=lQPs20b3Ey8
  */
 
+ @import url(./all.css);
+
 .header__menuwrapper{
   position: sticky;
   top: 53px;

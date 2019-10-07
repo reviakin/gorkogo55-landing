@@ -11,7 +11,6 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/f77f7d39ce.js"></script>
   </head>
 
   <body>
@@ -52,7 +51,7 @@
                 <i class="far fa-clock text-secondary" ></i>
               </span>
               с 09:00 до 19:00
-              <span id="text-open" class="text-success d-none">    
+              <span id="text-open" class="text-success d-none">
                  (Сейчас открыто)
               </span>
             </li>
@@ -67,7 +66,7 @@
       </ul>
     </div>
     <footer class="container pb-5">
- 
+
       <p>
         <!-- Yandex.Metrika informer -->
         <a
@@ -89,7 +88,7 @@
 
     <script type="text/javascript">
       // https://stackoverflow.com/a/800010/1775459
-      document.addEventListener("DOMContentLoaded", function() {    
+      document.addEventListener("DOMContentLoaded", function() {
         var element = document.getElementById("text-open");
         if (element) {
           var kaliningradHours = new Date().getUTCHours() + 2;
@@ -97,14 +96,14 @@
 
           if (isMallOpened) {
             element.classList.remove("d-none");
-          }          
+          }
         }
       });
-      
+
       //Открытие и закрытие меню по нажатию на "гамбургер"
       var menuBtn = document.getElementById( "menuBtn" );
       var menu = document.getElementById( "menu" );
-      menuBtn.addEventListener( 'click', function (event) { 
+      menuBtn.addEventListener( 'click', function (event) {
         if ( menu.classList.contains( "d-none" ) )  {
           menu.classList.remove( "d-none" );
         }
