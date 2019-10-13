@@ -1,151 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт торгового центра «Две пятерки»</title>
+    <link rel="stylesheet" href="./styles/style.css?v=2" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сайт торгового центра «Две пятерки»</title>
-  <link rel="stylesheet" href="./styles/style.css?v=2" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
-</head>
-
-<body>
-  <div class="header header__height">
-    <div class="container pt-5 pb-3">
-      <div class="d-flex pt-4">
-        <img class="header__logo" src="./assets/img/logo-main.png" alt="logo" />
-        <span class="header__name55 font-italic">Собственникам</span>
-        <i class="fas fa-bars fa-lg header__menubar text-secondary" id="menuBtn"></i>
+  <body>
+    <div class="header header__height">
+      <div class="container pt-5 pb-3">
+          <div class="d-flex pt-4">
+              <img class="header__logo" src="./assets/img/logo-main.png" alt="logo" />
+              <span class="header__name55 font-italic">Собственникам</span>
+              <i class="fas fa-bars fa-lg header__menubar text-secondary" id="menuBtn"></i>
+          </div>
       </div>
     </div>
-  </div>
 
-  <div class="header__menuwrapper header__menuwrapper__top d-none" id="menu">
-    <div class="container">
-      <ul class="header__menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="visitors.html">Посетителям</a></li>
-        <li><a href="tenants.html">Арендаторам</a></li>
-        <li><a href="owners.html" class="list-group-item disabled">Собственникам</a></li>
-      </ul>
+    <div class="header__menuwrapper header__menuwrapper__top d-none" id="menu">
+      <div class="container">
+        <ul class="header__menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="visitors.html">Посетителям</a></li>
+          <li><a href="tenants.html">Арендаторам</a></li>
+          <li><a href="owners.html" class="list-group-item disabled">Собственникам</a></li>
+          </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="top-div">
+    <div class="top-div">
+        <div class="container pb-3">
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-map-marker-alt text-secondary"></i>
+              <a href="https://yandex.ru/maps/org/dve_pyatyorki/1024420856/?ll=20.509270%2C54.727694&oid=1024420856&ol=biz&z=18">
+                <span>
+                  Калининград, улица Горького, 55
+                </span>
+              </a>
+            </li>
+            <li>
+              <span>
+                <i class="far fa-clock text-secondary" ></i>
+              </span>
+              с 09:00 до 19:00
+              <span id="text-open" class="text-success d-none">
+                 (Сейчас открыто)
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     <div class="container pb-3">
       <ul class="list-unstyled">
-        <li>
-          <i class="fas fa-map-marker-alt text-secondary"></i>
-          <a
-            href="https://yandex.ru/maps/org/dve_pyatyorki/1024420856/?ll=20.509270%2C54.727694&oid=1024420856&ol=biz&z=18">
-            <span>
-              Калининград, улица Горького, 55
-            </span>
-          </a>
-        </li>
-        <li>
-          <span>
-            <i class="far fa-clock text-secondary"></i>
-          </span>
-          с 09:00 до 19:00
-          <span id="text-open" class="text-success d-none">
-            (Сейчас открыто)
-          </span>
-        </li>
+        <li>Информация об управляющей компании</li>
+        <li>Возможность разместить объявление о сдаче помещения</li>
       </ul>
     </div>
-  </div>
 
-  <div class="container pb-3">
-    <ul class="list-unstyled">
-      <li>Информация об управляющей компании</li>
-      <li>Возможность разместить объявление о сдаче помещения</li>
-    </ul>
-  </div>
+    <div class="container py-3 text-center">
+      <a class="btn btn-outline-primary" href="/">На главную страницу</a>
+    </div>
+    
+    <footer class="container pb-5">
 
-  <div class="container py-3 text-center">
-    <a class="btn btn-outline-primary" href="index.html">На главную страницу</a>
-  </div>
-  <footer class="container pb-5">
+      <p>
+        <!-- Yandex.Metrika informer -->
+        <a
+          href="https://metrika.yandex.ru/stat/?id=53046907&amp;from=informer"
+          target="_blank"
+          rel="nofollow"
+          ><img
+            src="https://informer.yandex.ru/informer/53046907/3_1_FFFFFFFF_FFFFFFFF_0_pageviews"
+            style="width:88px; height:31px; border:0;"
+            alt="Яндекс.Метрика"
+            title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+            class="ym-advanced-informer"
+            data-cid="53046907"
+            data-lang="ru"
+        /></a>
+        <!-- /Yandex.Metrika informer -->
+      </p>
+    </footer>
 
-    <p>
-      <!-- Yandex.Metrika informer -->
-      <a href="https://metrika.yandex.ru/stat/?id=53046907&amp;from=informer" target="_blank" rel="nofollow"><img
-          src="https://informer.yandex.ru/informer/53046907/3_1_FFFFFFFF_FFFFFFFF_0_pageviews"
-          style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
-          title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
-          class="ym-advanced-informer" data-cid="53046907" data-lang="ru" /></a>
-      <!-- /Yandex.Metrika informer -->
-    </p>
-  </footer>
+    <script type="text/javascript">
+      // https://stackoverflow.com/a/800010/1775459
+      document.addEventListener("DOMContentLoaded", function() {
+        var element = document.getElementById("text-open");
+        if (element) {
+          var kaliningradHours = new Date().getUTCHours() + 2;
+          var isMallOpened = kaliningradHours >= 9 && kaliningradHours < 19;
 
-  <script type="text/javascript">
-    // https://stackoverflow.com/a/800010/1775459
-    document.addEventListener("DOMContentLoaded", function () {
-      var element = document.getElementById("text-open");
-      if (element) {
-        var kaliningradHours = new Date().getUTCHours() + 2;
-        var isMallOpened = kaliningradHours >= 9 && kaliningradHours < 19;
-
-        if (isMallOpened) {
-          element.classList.remove("d-none");
+          if (isMallOpened) {
+            element.classList.remove("d-none");
+          }
         }
-      }
-    });
+      });
 
-    //Открытие и закрытие меню по нажатию на "гамбургер"
-    var menuBtn = document.getElementById("menuBtn");
-    var menu = document.getElementById("menu");
-    menuBtn.addEventListener('click', function (event) {
-      if (menu.classList.contains("d-none")) {
-        menu.classList.remove("d-none");
-      } else {
-        menu.classList.add("d-none");
-      }
-      event.stopPropagation();
-    });
-    //закрытие меню, если оно открыто кликом по пустому месту
-    document.addEventListener("click", function (event) {
-      if (!menu.classList.contains("d-none")) {
-        menu.classList.add("d-none");
-      }
-    });
-  </script>
+      //Открытие и закрытие меню по нажатию на "гамбургер"
+      var menuBtn = document.getElementById( "menuBtn" );
+      var menu = document.getElementById( "menu" );
+      menuBtn.addEventListener( 'click', function (event) {
+        if ( menu.classList.contains( "d-none" ) )  {
+          menu.classList.remove( "d-none" );
+        }
+        else {
+          menu.classList.add( "d-none" );
+        }
+        event.stopPropagation();
+      });
+      //закрытие меню, если оно открыто кликом по пустому месту
+      document.addEventListener("click", function(event) {
+        if ( !menu.classList.contains("d-none") ) {
+          menu.classList.add( "d-none" );
+        }
+      });
+    </script>
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-      m[i] =
-        m[i] ||
-        function () {
-          (m[i].a = m[i].a || []).push(arguments);
-        };
-      m[i].l = 1 * new Date();
-      (k = e.createElement(t)),
-      (a = e.getElementsByTagName(t)[0]),
-      (k.async = 1),
-      (k.src = r),
-      a.parentNode.insertBefore(k, a);
-    })(
-      window,
-      document,
-      "script",
-      "https://mc.yandex.ru/metrika/tag.js",
-      "ym"
-    );
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function() {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-    ym(53046907, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true
-    });
-  </script>
-  <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/53046907" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
-</body>
-
+      ym(53046907, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/53046907"
+          style="position:absolute; left:-9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
 </html>
